@@ -5,4 +5,5 @@ audio, video and image types of data which are widely adopted in operating syste
 
 # Contributors
 Vishakha Chaudhary (vi-sha-kha)
-Dipesh Sedhai
+
+Dipesh Sedhai (Dipesh2056)
