@@ -3,7 +3,7 @@ import tkinter.messagebox
 import mysql.connector
 from PIL import ImageTk, Image
 from tkinter import ttk
-
+# from tkinter import ttk
 #connecting to the database
 connectiondb = mysql.connector.connect(host="localhost",user="root",passwd="abcd@123",database="test")
 cursordb = connectiondb.cursor()
