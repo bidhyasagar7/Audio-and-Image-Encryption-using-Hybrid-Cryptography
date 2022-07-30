@@ -4,6 +4,7 @@ from pathlib import Path
 from getpass import getuser
 import ctypes
 import os
+# import os
 
 user = getuser()  # get the username
 directory_path = "C:/Users/{}/Hybrid Encryption".format(user)  # path for default directory
