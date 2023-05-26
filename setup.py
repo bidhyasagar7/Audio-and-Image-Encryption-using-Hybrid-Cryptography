@@ -11,7 +11,7 @@ import tkinter.messagebox
 def message(name, button, mgs_label):
     """This function displayed the massage, return by either Encryption or Decryption"""
 
-    button['state'] = DISABLED  # make button state disable
+    button['state'] = DISABLED  # make button state disable'
     if button["text"] == "Encrypt":
         mgs = hybrid_encryption.encryption(name)
         mgs_label.config(text=mgs, background="grey")
@@ -57,7 +57,7 @@ def wrongfile():
 root = Tk()
 #root.get_themes()
 #root.set_theme("clearlooks")
-icon = PhotoImage(file="images/icon.png")  # icon for the window
+icon = PhotoImage(file="images/icon.png")  # Icon for the window
 root.iconphoto(False, icon)
 title = root.title("Hybrid Encryption")
 
@@ -65,7 +65,7 @@ app_width = 1360
 app_height = 768
 screen_width = root.winfo_screenwidth()
 screen_height = root.winfo_screenheight()
-# Evaluating X and Y coordinate such that, window always comes into the center.
+# Evaluating X and Y coordinate such that,Window always comes into the center.
 x = (screen_width / 2) - (app_width / 2)
 y = (screen_height / 2) - (app_height / 2)
 root.geometry(f'{app_width}x{app_height}+{int(x)}+{int(y)}')
