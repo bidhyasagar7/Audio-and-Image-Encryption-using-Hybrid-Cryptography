@@ -35,7 +35,7 @@ def encrypt_key(session_key):
     :param session_key:
     """
     public_key = get_public_key()
-    public_key = RSA.importKey(public_key)
+    public_key =  RSA.importKey(public_key)
     public_key = PKCS1_OAEP.new(public_key)
 
     encrypted_aes_key = public_key.encrypt(session_key)

@@ -27,10 +27,10 @@ def get_best_choice(bitlength):
         prime_choice = random.randrange(2 ** (bitlength - 1) + 1, 2 ** bitlength - 1)
 
         for divisor in first_primes_list:
-            if prime_choice % divisor == 0:
+            if prime_choice   % divisor == 0:
                 break
         else:
-            return prime_choice
+            return  prime_choice
 
 
 def is_millar_rabin_passed(prime_choice):

@@ -16,7 +16,7 @@ def login():
 
     #Title
     root2.title("Account Login")
-    icon = PhotoImage(file="images/icon.png")  # icon for the window
+    icon =  PhotoImage(file="images/icon.png")  # icon for the window
     root2.iconphoto(False, icon)
 
     # Designate center location

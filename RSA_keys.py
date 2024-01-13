@@ -23,7 +23,7 @@ def is_file_exist():
     public_key_path = f"{keys_path}/public key.pem"
     private_key_path = f"{keys_path}/private key.pem"
     is_public_key_exist = os.path.isfile(public_key_path) and os.stat(public_key_path).st_size != 0
-    is_private_key_exist = os.path.isfile(private_key_path) and os.stat(private_key_path).st_size != 0
+    is_private_key_exist =  os.path.isfile(private_key_path) and os.stat(private_key_path).st_size != 0
 
     return is_public_key_exist and is_private_key_exist
 
@@ -53,7 +53,7 @@ def create_encryption_directory():
     try:
         Path(directory_path).mkdir(parents=True, exist_ok=True)
     except Exception as directory_error:
-        print(directory_error)
+         print(directory_error)
 
 
 def generating_keys():

@@ -90,7 +90,7 @@ def encryption(file_path):
     if not RSA_keys.is_encryption_directory_exist():
         RSA_keys.create_encryption_directory()
 
-    file_reader = open(file_path, "rb")
+    file_reader =  open(file_path, "rb")
     plaintext = file_reader.read()
     file_reader.close()
 
@@ -101,7 +101,7 @@ def encryption(file_path):
     session_key = AES_key.get_key()
     raw_data = pad(plaintext)
     iv = Random.new().read(AES.block_size)
-    mode = AES.MODE_CBC
+    mode =  AES.MODE_CBC
     cipher = AES.new(session_key, mode, iv)
     cipher_text = iv + cipher.encrypt(raw_data)
     try:
@@ -162,7 +162,7 @@ def decryption(file_path):
         mgs = f"File successfully decrypted & stored at :\n{default_path}"
 
     except Exception as e:
-        mgs = "There is some error please check the selected file"
+        mgs = "there is some error, please checks the selected file"
         print(e)
 
-    return mgs
+    return  mgs
